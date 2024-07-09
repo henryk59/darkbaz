@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'ppheehee';
+  src: url('./fonts/uni-sans.heavy-caps.otf') format('opentype');
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); /* Dark shadow */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'ppheehee';
+  color: #fff; /* White logo text */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow effect */
+}
+
+nav a {
+  font-weight: bold;
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.8); /* White glow effect */
+}
+
+main {
+  padding: 100px 20px 20px; /* Adjust top padding for header height */
+}
+
+.banner {
+  background-image: url('banner.jpg'); /* Replace with your banner image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Darker shadow */
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-family: 'ppheehee';
+  margin: 0;
+  font-size: 3em;
+  text-shadow: 0 0 15px rgb(0, 0, 0, 0.8); /* White glow effect */
+}
+
+.banner p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+.explore-btn {
+  background-color: #330000; /* Dark red */
+  color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background-color: #4d0000; /* Darker red on hover */
+}
+
+.featured-listings,
+.recent-activity,
+.categories,
+.marketplace,
+.item-detail,
+.vendor-profile,
+.vendor-listings,
+.vendor-reviews {
+  margin-bottom: 20px;
+}
+
+.listing,
+.item {
+  background-color: #303030; /* Darker gray */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Darker shadow */
+}
+
+.listing img,
+.item img {
+  max-width: 10%;
+  border-radius: 5px;
+}
+
+.view-btn,
+.buy-btn {
+  background-color: #330000; /* Dark red */
+  color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-btn:hover,
+.buy-btn:hover {
+  background-color: #4d0000; /* Darker red on hover */
+}
+
+.categories {
+  float: left;
+  width: 20%;
+}
+
+.marketplace {
+  float: right;
+  width: 75%;
+}
+
+.marketplace h1 {
+  font-size: 2em;
+}
+
+.item-detail {
+  display: flex;
+}
+
+.item-images {
+  flex: 1;
+  padding: 10px;
+}
+
+.item-info {
+  flex: 2;
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.8); /* Dark shadow */
+}
+
+footer a {
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #aaa;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
